@@ -1,12 +1,12 @@
-name: Update DuckDNS IP
-on:
-  schedule:
-    - cron: '*/5 * * * *'  # Every 5 minutes
-  workflow_dispatch:
-jobs:
-  update-ip:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Update DuckDNS
-        run: |
-          curl "https://www.duckdns.org/update?domains=limigo&token=526eac61-db5a-44e5-bddb-f027f7014115&ip="
+# name: Update DuckDNS IP
+# on:
+#   schedule:
+#     - cron: '*/5 * * * *'  # Every 5 minutes
+#   workflow_dispatch:
+# jobs:
+#   update-ip:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Update DuckDNS
+#         run: |
+#           curl "https://www.duckdns.org/update?domains=limigo&token=526eac61-db5a-44e5-bddb-f027f7014115&ip="
